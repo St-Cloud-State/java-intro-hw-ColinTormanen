@@ -45,6 +45,11 @@ public class Person {
     // Returns the object as a complete string
     @Override
     public String toString() {
-        return "First name: " + firstName  + " Last name: " + lastName + " Id: " + id;
+        return "First name: " + firstName  + "  Last name: " + lastName + "  Id: " + id;
+    }
+
+    // Determines if two people are equal
+    public boolean equals(Person p2) {
+        return (firstName.equals(p2.firstName) && lastName.equals(p2.lastName) && id == p2.id);
     }
 }
